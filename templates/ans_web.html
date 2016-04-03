@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=400, user-scalable=yes">
+    <title>
+      エイチーム内定者クイズ
+    </title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>
+      <img src="/static/a-tm.png" alt="エイチーム" width="150px" />
+      内定者クイズ
+    </h1>
+    <h2>
+        結果発表
+    </h2>
+    <p class="result">
+      {{ correct_num }}/3問正解
+    </p>
+    <table class="results">
+      <thead>
+        <tr>
+          <th>
+            あなたの解答
+          </th>
+          <th>
+            模範解答
+          </th>
+          <th>
+            判定
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {{ ans1 }}
+            <!-- <a href="b.png"> -->
+            <!--   {{ ans1 }}<br /> -->
+            <!--   <img src="pict2.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/yasui.jpg">
+              安井 岳<br />
+              <img src="/static/yasui.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result1 }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ ans2 }}
+            <!-- <a href="{{ pict2 }}.png"> -->
+            <!--   {{ ans2 }}<br /> -->
+            <!--   <img src="{{ pict2 }}.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/oohigashi.jpg">
+              大東 祐太<br />
+              <img src="/static/oohigashi.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result2 }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ ans3 }}
+            <!-- <a href="{{ pict3 }}.png"> -->
+            <!--   {{ ans3 }}<br /> -->
+            <!--   <img src="{{ pict3 }}.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/murabayashi.jpg">
+              村林 巧<br />
+              <img src="/static/murabayashi.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result3 }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <input type="button" value="総合職のクイズ"
+        onClick="location.href='/sogo/quiz'">
+    </p>
+    <small>
+      このページはエイチームWebプログラマー内定者によって作成されました
+    </small>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=400, user-scalable=yes">
+    <title>
+      エイチーム内定者クイズ
+    </title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>
+      <img src="/static/a-tm.png" alt="エイチーム" width="150px" />
+      内定者クイズ
+    </h1>
+    <h2>
+        結果発表
+    </h2>
+    <p class="result">
+      {{ correct_num }}/5問正解
+    </p>
+    <table class="results">
+      <thead>
+        <tr>
+          <th>
+            あなたの解答
+          </th>
+          <th>
+            模範解答
+          </th>
+          <th>
+            判定
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {{ ans1 }}
+            <!-- <a href="b.png"> -->
+            <!--   {{ ans1 }}<br /> -->
+            <!--   <img src="pict2.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/kawai.jpg">
+              河合 雅<br />
+              <img src="/static/kawai.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result1 }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ ans2 }}
+            <!-- <a href="{{ pict2 }}.png"> -->
+            <!--   {{ ans2 }}<br /> -->
+            <!--   <img src="{{ pict2 }}.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/ishiguro.jpg">
+              石黒 有晟<br />
+              <img src="/static/ishiguro.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result2 }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ ans3 }}
+            <!-- <a href="{{ pict3 }}.png"> -->
+            <!--   {{ ans3 }}<br /> -->
+            <!--   <img src="{{ pict3 }}.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/kouno.jpg">
+              河野 光志<br />
+              <img src="/static/kouno.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result3 }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ ans4 }}
+            <!-- <a href="{{ pict2 }}.png"> -->
+            <!--   {{ ans2 }}<br /> -->
+            <!--   <img src="{{ pict2 }}.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/koiwa.jpg">
+              小岩 穂菜美<br />
+              <img src="/static/koiwa.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result4 }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ ans5 }}
+            <!-- <a href="{{ pict3 }}.png"> -->
+            <!--   {{ ans3 }}<br /> -->
+            <!--   <img src="{{ pict3 }}.png" width="100px" /> -->
+            <!-- </a> -->
+          </td>
+          <td>
+            <a href="/static/maruichi.jpg">
+              丸一 智加<br />
+              <img src="/static/maruichi.jpg" width="100px" />
+            </a>
+          </td>
+          <td>
+            {{ result5 }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      参加ありがとうございました！
+    </p>
+    <small>
+      このページはエイチームWebプログラマー内定者によって作成されました
+    </small>
+  </body>
+</html>

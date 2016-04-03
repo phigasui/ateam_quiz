@@ -1,0 +1,86 @@
+h1
+{
+  font-size:x-large;
+  margin-bottom:5px;
+}
+h2
+{
+  font-size:large;
+  background-color:red;
+  color:white;
+  margin-top:5px;
+}
+
+small
+{
+  color:white;
+  background-color:red;
+  display:block;
+  font-size:x-small;
+}
+
+input[type=submit]
+{
+  display:block;
+  width:120px;
+  height:30px;
+  margin:auto;
+
+}
+
+p.warning
+{
+  color:red;
+  font-size:small;
+}
+
+input.name
+{
+  display:block;
+  width:98%;
+  width:calc(100% - 3px);
+  font-size:large;
+}
+
+p.result
+{
+  font-size:300%;
+  display:black;
+  margin:40px auto 40px auto;
+  text-align:center;
+  font-weight: bold;
+}
+
+dl.questions > dd
+{
+  margin-left:0;
+}
+
+table.results
+{
+  border-spacing: 0;
+  width:90%;
+  margin:auto;
+}
+
+table > colgroup > col.my_answer
+{
+  width: 45%;
+}
+
+table > colgroup > col.model_answer
+{
+  width: 45%;
+}
+
+table.results > thead
+{
+  background-color:red;
+  color:white;
+}
+
+table.results > tbody > tr > td
+{
+  border-bottom:solid 1px gray;
+  text-align: center;
+}
